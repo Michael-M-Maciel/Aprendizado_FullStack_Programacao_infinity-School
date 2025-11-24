@@ -8,7 +8,7 @@ Aqui estão organizadas as atividades, desafios e provas de cada módulo.
 
 Estou focando no aprendizado das seguintes tecnologias:
 
-* **🐍 Python:** Lógica de programação, Estruturas de dados (Listas, Tuplas, Dicionários, Sets) e POO.
+* **🐍 Python:** Lógica de programação, Estruturas de dados (Listas, Tuplas, Dicionários, Sets,Laços de repetição, Funções, Flet ) e POO.
 * **🗄️ Banco de Dados:** Modelagem e SQL.
 * **🌐 Front-end:** HTML5, CSS3 e JavaScript.
 
