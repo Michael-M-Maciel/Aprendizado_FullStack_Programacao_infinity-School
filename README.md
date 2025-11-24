@@ -1,25 +1,19 @@
-# 🚀 Aprendizado Full Stack - Infinity School
-
-Bem-vindo(a)! Este repositório reúne minha evolução e exercícios práticos desenvolvidos durante o curso de Desenvolvimento Full Stack na **Infinity School**.
-
-Aqui estão organizadas as atividades, desafios e provas de cada módulo.
-
 ## 🛠️ Tecnologias e Ferramentas
 
 Estou focando no aprendizado das seguintes tecnologias:
 
-* **🐍 Python:** Lógica de programação, Estruturas de dados (Listas, Tuplas, Dicionários, Sets, Laços de repetição, Funções, Flet ) e POO.
-* **🗄️ Banco de Dados:** Modelagem e SQL.
-* **🌐 Front-end:** HTML5, CSS3 e JavaScript.
+<div style="display: inline_block">
+  <img align="center" alt="Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+  <img align="center" alt="HTML5" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+  <img align="center" alt="CSS3" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+  <img align="center" alt="Js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+  <img align="center" alt="MySql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+</div>
 
-## 📂 Estrutura do Repositório
+<br>
 
-O conteúdo está separado por pastas temáticas:
-
-- Exercícios.
-- Desafios.
-- Projetos.
-- Atualizando e adiconando conforme o avanço do curso.
-
----
-*Desenvolvido por [Michael Maciel] em contínua jornada na Infinity School(2025/2026).*
+| Tecnologia | O que estou aprendendo |
+| :--- | :--- |
+| **Python** | Lógica, Estrutura de dados (Listas, Tuplas, Sets) e POO |
+| **MySQL** | Criação de tabelas, consultas e modelagem de dados |
+| **Front-end** | Estrutura (HTML), Estilo (CSS) e Interatividade (JS) |
