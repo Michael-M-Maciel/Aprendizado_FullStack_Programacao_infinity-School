@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color:#121214;
+    font-family: 'Poppins', sans-serif;
+
+    
+}   
+
+p{
+    color: #e1e1e6;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    
+}
+
+.h1-texto{
+    color: #8257e5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    border: 2px solid black;
+
+    
+}   
+
+.h2{
+    color:#8257e5 ;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    padding: 10px;  /* adiciona espaçamento interno */
+   
+}
+
+#mim{
+    color:#8257e5;
+    margin-top: 100px; /* adiciona espaço acima do título */
+}
+
+h3{
+    color: yellow;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    padding: 15px;
+    margin: 0;
+    border: radius 10px;
+    
+
+}
+    
+
+.div{
+    padding: 30px 30px ; /* adiciona espaçamento interno */
+    border: 2px solid black; /* adiciona uma borda preta */
+    
+
+
+}
+
+li {
+    list-style: none; /* remove os marcadores padrão */
+    color: #e1e1e6;
+}
+
+.section1{ /*main section*/
+    
+   text-align: center; /* centraliza o conteúdo da seção */
+    
+}
+
+#mike{
+    width: 200px; /* define a largura da imagem */
+    border-radius: 100px; /* deixa a imagem redonda */
+    box-shadow: #8257e5 0px 0px 10px; /* adiciona uma sombra ao redor da imagem */
+
+}
+
+#article{
+    
+    font-size: 20px; /* define o tamanho da fonte */
+    margin: 20px; /* adiciona margem ao redor do parágrafo */
+    line-height: 2.0; /* aumenta o espaçamento entre linhas para melhor legibilidade */
+}
+
+#curriculum{
+    
+    color: yellow; /* define a cor do link */
+    
+}
