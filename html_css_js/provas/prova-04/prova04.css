@@ -1,0 +1,66 @@
+/* 1. Configuração Geral da Página */
+body {
+    margin: 0;                /* Remove as margens brancas padrão do navegador */
+    font-family: Arial, sans-serif; /* Muda a fonte para uma mais moderna */
+    background-color: #eeeeee; /* Cor de Fundo: Cinza Claro */
+}
+
+/* 2. Estilo do Cabeçalho */
+header {
+    background-color: #283e51; /* Cor: Azul Escuro */
+    color: white;              /* Texto Branco */
+    padding: 20px;             /* Espaçamento interno (gordurinha) */
+    text-align: center;        /* Texto centralizado */
+}
+
+/* 3. Layout Principal (Colocar lado a lado) */
+main {
+    display: flex;            /* MÁGICA: Faz os filhos (section e aside) ficarem lado a lado */
+    max-width: 900px;         /* Largura máxima do site */
+    margin: 20px auto;        /* Centraliza o site na tela */
+    gap: 20px;                /* Espaço entre a section e o aside */
+}
+
+/* 4. Estilo da Seção Principal */
+section {
+    background-color: #ffffff; /* Fundo Branco */
+    padding: 20px;
+    flex: 2;                   /* Ocupa 2 partes do espaço (é maior) */
+    border-radius: 8px;        /* Arredonda as pontas */
+}
+
+/* 5. Estilo da Barra Lateral */
+aside {
+    background-color: #ffffff; /* Fundo Branco */
+    padding: 20px;
+    flex: 1;                   /* Ocupa 1 parte do espaço (é menor) */
+    border-radius: 8px;
+}
+
+/* 6. Estilo do Rodapé */
+footer {
+    background-color: #283e51; /* Mesmo Azul do Header */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;          /* Prende no final da tela (opcional) */
+    bottom: 0;
+    width: 100%;
+}
+
+/* 7. Elementos Extras */
+button {
+    background-color: #ff9900; /* Cor Laranja */
+    color: white;
+    border: none;             /* Tira a borda feia padrão */
+    padding: 10px 20px;       /* Deixa o botão maior */
+    cursor: pointer;          /* Mãozinha ao passar o mouse */
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+a {
+    color: #283e51;           /* Link azul escuro */
+    text-decoration: none;    /* Tira o sublinhado */
+    font-weight: bold;
+}
