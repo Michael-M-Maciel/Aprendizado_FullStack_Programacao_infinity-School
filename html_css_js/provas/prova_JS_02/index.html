@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proca aula 02</title>
+</head>
+<body>
+    <script>
+        
+        /*Crie um sistema em JavaScript que utilize os conceitos de operadores ternários, estruturas switch e operadores lógicos para classificar 
+        e exibir mensagens baseadas na idade e no status do usuário.
+
+Requisitos do Projeto:
+
+* Solicite ao usuário a idade e o status de registro (registrado ou não registrado) utilizando prompt().
+
+* Use um operador ternário para determinar se o usuário é maior de idade ou menor de idade.
+
+* Utilize uma estrutura switch para exibir uma mensagem personalizada com base no status do usuário:
+
+- "registrado": Exibir mensagem de boas-vindas.
+- "não registrado": Exibir mensagem para completar o registro.
+- Qualquer outro valor: Exibir "Status desconhecido."
+- Adicione uma lógica com operadores lógicos para verificar:
+- Se o usuário é maior de idade e registrado, exiba uma mensagem de acesso completo.
+- Se o usuário é menor de idade ou não registrado, exiba uma mensagem de acesso limitado.*/
+
+        let idade = Number(prompt('qual sua idade: '));
+        let status_registro = prompt('registrado ou não registrado: ');
+        let resultado_registro
+        let maior_idade =(idade >= 18) ? 'maior idade':'menor de idade';
+        
+        let cadastro_completo =(maior_idade >= 18 && status_registro =='registrado') ?'acesso complero':'acesso limitado';
+        console.log(maior_idade);
+
+        switch(status_registro){
+            case 'registrado':
+                resultado_registro = 'Seja muito bem vindo!!!';
+                break;
+            case 'não registrado':
+                resultado_registro = 'Por favor complere seu registro completo';
+                break;
+            default:
+                resultado_registro='Status desconhecido';
+        }
+        console.log(resultado_registro);
+
+    </script>
+    
+</body>
+</html>
