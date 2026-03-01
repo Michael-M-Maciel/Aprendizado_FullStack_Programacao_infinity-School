@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova</title>
+</head>
+<body>
+    <script>
+            //         Crie um programa em JavaScript que permita ao usuário gerenciar uma lista de compras utilizando arrays.
+            //  O programa deve permitir a adição de itens, a remoção de itens e a exibição de todos os itens da lista.
+
+            // Requisitos do Projeto:
+            // * Adicionar Itens:
+            //  - Utilize o método push() para permitir que o usuário adicione novos itens à lista de compras.
+
+            // * Remover Itens:
+            //  - Permita que o usuário remova um item específico utilizando o método splice().
+            //  - O programa deve solicitar o índice do item a ser removido.
+
+            // * Exibir Lista:
+            //  - Use um loop for...of para percorrer e exibir os itens da lista. Cada item deve ser mostrado com seu respectivo índice.
+
+            // * Atualizar Itens:
+            //  - Permita que o usuário atualize um item da lista ao fornecer o índice e o novo valor.
+
+            let lista_compras = ['arroz', 'feijão', 'macarrão'];
+
+            let lista_inicial = lista_compras.slice(0);
+            console.log('lista inicial', lista_inicial);
+
+            let adicionar = prompt('adicione um item na lista: ');
+            lista_compras.push(adicionar);
+            console.log(lista_compras);
+
+            let remover_item = Number(prompt('remove um item pelo indice: '));
+            console.log(`lista atualizada apos remoção indice: ${remover_item}-${lista_compras[remover_item]}` );
+            lista_compras.splice(remover_item, 1);
+            
+
+            contador = 0;
+            for(i of lista_compras){
+                console.log(`[${contador++}]-${i}`);
+            }
+
+            let novo_item = prompt('item novo para ser atualizado na lista: ');
+            let indice_novo_item = Number(prompt('indice do produto para atualizar: '));
+            lista_compras[indice_novo_item] = novo_item;
+            console.log('lista com item atualizado', lista_compras);
+
+            
+      
+
+                
+            
+
+
+    </script>
+    
+</body>
+</html>
