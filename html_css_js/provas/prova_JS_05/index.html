@@ -31,9 +31,9 @@
 
         let opcao = '';   
 
-        while(opcao  = prompt('+ adicionar | l -listar | - remover | concluir = sair: ')){
+        while(opcao  = prompt('+ adicionar | l -listar | - remover | s = sair | c = concluir: ')){
 
-            if(opcao =='concluir'){
+            if(opcao =='s'){
                 console.log('Fim')
                 break
             }
@@ -48,6 +48,13 @@
                 let remover_item = Number(prompt('indice do item a ser removido: '));
                 console.log(`removendo item lista_tarefa[${remover_item}]`);
                 lista_tarefas.splice(remover_item, 1);
+            }
+            else if(opcao == 'c'){
+                item_conluir =Number(prompt('indice intem para conluir tarefa: '))
+                lista_tarefas[item_conluir] = `✅${lista_tarefas[item_conluir]}`
+               
+                          
+
             }
         }
     </script>
