@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Entendendo Position e Z-Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            height: 2000px; /* Altura exagerada para ter barra de rolagem */
+            background-color: #f0f0f0;
+        }
+
+        /* 1. STATIC (O Padrão) */
+        .box-static {
+            position: static;
+            background-color: #ccc;
+            padding: 20px;
+            border: 2px solid #999;
+            margin-bottom: 20px;
+        }
+
+        /* 2. RELATIVE (A Referência + Z-Index baixo) */
+        .box-relative {
+            position: relative;
+            background-color: #ffccbc; /* Laranja claro */
+            padding: 20px;
+            border: 2px solid #e64a19;
+            top: 20px; /* Deslocado 20px para baixo da posição original */
+            left: 20px; /* Deslocado 20px para a direita */
+            z-index: 1; /* Nível de pilha baixo */
+            margin-bottom: 20px;
+        }
+
+        /* 3. ABSOLUTE (O Flutuante + Z-Index alto) */
+        .box-absolute {
+            position: absolute;
+            background-color: #bbdefb; /* Azul claro */
+            padding: 10px;
+            border: 2px solid #1976d2;
+            
+            /* Ele vai procurar o parente (box-relative) para se posicionar */
+            top: 0;
+            right: 0;
+            
+            z-index: 10; /* Vai ficar ACIMA do relative porque 10 > 1 */
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        }
+
+        /* 4. FIXED (O Teimoso) */
+        .botao-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4caf50; /* Verde */
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            z-index: 100; /* Fica acima de TUDO */
+            cursor: pointer;
+        }
+
+        /* 5. STICKY (O Híbrido) */
+        .menu-sticky {
+            position: sticky;
+            top: 0; /* Vai grudar quando chegar no topo (0px) */
+            background-color: #673ab7; /* Roxo */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-sticky">EU SOU STICKY! (Role a página e veja eu grudar no topo)</div>
+
+    <h2>Exemplo de Posicionamento</h2>
+
+    <div class="box-static">
+        <strong>1. Static:</strong> Sou normal. O navegador me coloca onde eu devo estar na ordem.
+    </div>
+
+    <div class="box-relative">
+        <strong>2. Relative:</strong> Fui empurrado 20px para baixo e direita.
+        <br>Observe que deixei um espaço vazio onde eu deveria estar originalmente.
+        
+        <div class="box-absolute">
+            <strong>3. Absolute:</strong> Estou preso ao topo-direita do pai Relative. E meu Z-Index é maior, então flutuo por cima.
+        </div>
+    </div>
+
+    <p>Role a página para baixo para ver o efeito do <strong>Sticky</strong> no topo e do botão <strong>Fixed</strong> no canto inferior.</p>
+    <p>Texto de preenchimento...</p>
+    <p>Texto de preenchimento...</p>
+    <p>Texto de preenchimento...</p>
+    <p>Texto de preenchimento...</p>
+    <p>Texto de preenchimento...</p>
+    <p>Texto de preenchimento...</p>
+    <p>Texto de preenchimento...</p>
+
+    <div class="botao-chat">Chat</div>
+
+</body>
+</html>

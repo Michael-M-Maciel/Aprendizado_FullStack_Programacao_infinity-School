@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Diferenças de Display</title>
+    <link rel="stylesheet" href="pratica.css">
+</head>
+<body>
+
+    <!-- h2: Define um cabeçalho de nível 2 para a seção -->
+    <h2>1. Display: Block (O padrão de divs, p, h1)</h2>
+    <!-- div: Container genérico para agrupar elementos -->
+    <div class="container">
+        <!-- div: Elemento de bloco que ocupa toda a largura disponível -->
+        <div class="box-block">Bloco 1 (Ocupa tudo)</div>
+        <div class="box-block">Bloco 2 (Caiu de linha)</div>
+        <div class="box-block">Bloco 3</div>
+    </div>
+    <!-- hr: Insere uma linha horizontal para separar seções -->
+    <hr>
+
+    <!-- h2: Define um cabeçalho de nível 2 para a seção -->
+    <h2>2. Display: Inline (O padrão de span, a, strong)</h2>
+    <!-- div: Container genérico para agrupar elementos -->
+    <div class="container">
+        <!-- span: Elemento inline para texto ou pequenos conteúdos -->
+        <span class="box-inline">Texto 1</span>
+        <span class="box-inline">Texto 2 (Fica ao lado)</span>
+        <span class="box-inline">Texto 3</span>
+    </div>
+    <!-- p: Define um parágrafo de texto -->
+    <p><em>Nota: Tentei dar largura de 100px no CSS, mas o inline ignora.</em></p>
+    <!-- hr: Insere uma linha horizontal para separar seções -->
+    <hr>
+
+    <!-- h2: Define um cabeçalho de nível 2 para a seção -->
+    <h2>3. Display: Inline-Block</h2>
+    <!-- div: Container genérico para agrupar elementos -->
+    <div class="container">
+        <!-- div: Elemento que combina características de bloco e inline -->
+        <div class="box-inline-block">Híbrido 1</div>
+        <div class="box-inline-block">Híbrido 2</div>
+        <div class="box-inline-block">Híbrido 3</div>
+    </div>
+    <!-- p: Define um parágrafo de texto -->
+    <p><em>Nota: Ficam lado a lado E aceitam largura/altura.</em></p>
+    <!-- hr: Insere uma linha horizontal para separar seções -->
+    <hr>
+
+    <!-- h2: Define um cabeçalho de nível 2 para a seção -->
+    <h2>4. Display: None</h2>
+    <!-- div: Container genérico para agrupar elementos -->
+    <div class="container">
+        <!-- div: Elemento de bloco visível -->
+        <div class="box-normal">Visível 1</div>
+        <!-- div: Elemento oculto (display: none) -->
+        <div class="box-none">Este aqui sumiu!</div>
+        <div class="box-normal">Visível 2 (Ocupou o lugar do que sumiu)</div>
+    </div>
+
+</body>
+</html>

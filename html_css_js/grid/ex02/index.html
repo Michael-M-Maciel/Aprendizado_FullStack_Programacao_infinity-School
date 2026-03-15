@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex02</title>
+    <style>
+        /* CONTAINER - Define o grid layout */
+        .container{
+            display: grid; /* Define como um grid */
+            grid-template-columns:1fr 1fr 1fr; /* Cria 3 colunas iguais */
+                     
+        }
+
+        /* IMG - Espaçamento das imagens */
+        .img{
+            padding: 10px; /* Espaçamento interno de 10 pixels */
+            
+        }
+
+        /* BODY - Centraliza o conteúdo na tela */
+        body{
+            display: flex; /* Define como flexbox para centralizar */
+            justify-content: center; /* Centraliza horizontalmente */
+            margin: 0; /* Remove margens padrão */
+            height: 100vh; /* Altura igual à altura da tela */
+            align-items: center; /* Centraliza verticalmente */
+            background-color: bisque; /* Cor de fundo bege */
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="crf.jpg" alt="ícone flamengo">
+        </div>
+        <div class="img">
+            <img src="crf.jpg" alt="ícone flamengo">
+        </div>
+        <div class="img">
+            <img src="crf.jpg" alt="ícone flamengo">
+        </div>
+        <div class="img">
+            <img src="crf.jpg" alt="ícone flamengo">
+        </div>
+        <div class="img">
+            <img src="crf.jpg" alt="ícone flamengo">
+        </div>
+        <div class="img">
+            <img src="crf.jpg" alt="ícone flamengo">
+        </div>
+
+    </div>
+    
+</body>
+</html>

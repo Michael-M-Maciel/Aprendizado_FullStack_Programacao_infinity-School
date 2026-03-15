@@ -1,0 +1,47 @@
+/* Seletor universal: aplica estilos a todos os elementos */
+*{
+    padding: 0;     /* Remove o espaço interno dos elementos */
+    margin: 0;      /* Remove o espaço externo dos elementos */
+}
+
+
+/* Container principal que usa Grid Layout */
+.container{
+    display: grid;          /* Define o elemento como um container de grid */
+   grid-template-areas:    /* Define as áreas nomeadas do grid */
+   'header header header'   /* Header ocupa 3 colunas */
+   'sidebar main main'      /* Sidebar ocupa 1 coluna, Main ocupa 2 colunas */
+   'footer footer footer';  /* Footer ocupa 3 colunas */
+   grid-gap: 10px;         /* Define espaço de 10px entre as células do grid */
+   padding: 20px;          /* Define espaço interno de 20px ao redor do conteúdo */
+}
+
+/* Estilo para o cabeçalho (header) */
+.header{
+    grid-area: header;              /* Posiciona o elemento na área 'header' do grid */
+    background-color: blue;         /* Define cor de fundo azul */
+    padding: 20px;                  /* Define espaço interno de 20px */
+    text-align: center;             /* Alinha o texto ao centro */
+} 
+
+/* Estilo para a barra lateral (sidebar) */
+.sidebar{
+    grid-area: sidebar;             /* Posiciona o elemento na área 'sidebar' do grid */
+    background-color: aqua;         /* Define cor de fundo em tom ciano/aqua */
+    padding: 20px;                  /* Define espaço interno de 20px */
+}
+
+/* Estilo para a área principal (main) */
+.main{
+    grid-area: main;                        /* Posiciona o elemento na área 'main' do grid */
+    background-color: rgb(199, 234, 94);    /* Define cor de fundo com verde claro usando RGB */
+    padding: 20px;                          /* Define espaço interno de 20px */
+}
+
+/* Estilo para o rodapé (footer) */
+.footer{
+    grid-area: footer;              /* Posiciona o elemento na área 'footer' do grid */
+    background-color: blueviolet;   /* Define cor de fundo em violeta/azul violeta */
+    padding: 20px;                  /* Define espaço interno de 20px */
+    text-align: center;             /* Alinha o texto ao centro */
+}

@@ -1,0 +1,175 @@
+
+/* Reset - Remove margens e paddings padrão de todos os elementos */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove os pontos da lista (ul) */
+ul{
+    list-style: none;
+}
+
+/* Remove o sublinhado dos links e deixa a cor branca */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Cabeçalho - Flex com itens espaçados, fundo azul */
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    background-color: rgb(98, 98, 247);
+    color: aliceblue;
+} 
+
+/* Menu de navegação - itens em linha com espaçamento de 25px entre eles */
+.lista{
+    display: flex;
+    gap: 25px; 
+   
+}
+
+/* Primeira seção - conteúdo centralizado em coluna, fundo cinza */
+.sec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(213, 213, 213, 0.551);
+    padding: 45px;
+    gap: 20px;
+    text-align: center;
+    
+}
+
+/* Botão - fundo azul, texto branco, com padding */
+.botao{
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+}
+
+/* Segunda seção - fundo cinza claro com padding */
+.sec2{
+    padding: 40px;
+    background-color: rgb(215, 218, 217);
+}
+
+/* Título da segunda seção - centralizado */
+.h2_sec2{
+    text-align: center;
+}
+
+/* Container pai das divs da sec2 - flex com espaçamento entre itens */
+.div_pai_sec2{
+    display: flex;
+    justify-content:space-between ;
+    text-align: center;
+    gap: 30px;
+    padding: 50px;
+
+}
+
+/* Divs da sec2 - cards com fundo branco */
+.div_sec2{
+    background-color: #fff;
+    padding: 16px 32px;
+   
+}
+
+/* Container pai das divs da sec3 - flex centralizado */
+.div_pai_sec3{
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Divs da sec3 - cards com fundo azul claro e cantos arredondados */
+.div_sec3{
+    background-color: rgb(181, 205, 205);
+    border-radius: 3px;
+    padding: 16px 32px;
+    
+}
+
+/* Título da terceira seção - centralizado */
+.h2_sec3{
+    text-align: center;
+}
+
+/* Footer (rodapé) - texto branco com fundo preto */
+.rodape{
+    color: #fff;
+    background-color: black;
+}
+
+/* Container pai do rodapé - itens distribuídos ao redor com espaçamento */
+.pai_rodape{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    
+    
+  
+}
+
+/* Divs individuais do rodapé - flex em coluna */
+.div_rodape{
+    flex-direction: column;
+}
+
+/* H4 do rodapé - margem inferior para espaçamento */
+.rodape h4{
+    margin-bottom: 20px;
+}
+
+/* Parágrafos do rodapé - margem superior para espaçamento */
+.rodape p{
+    margin-top: 20px;
+}
+
+/* Lista (ul) do rodapé - margem superior para espaçamento */
+.rodape ul{
+    margin-top: 8px;
+}
+
+/* Copyright - texto centralizado */
+.copy{
+    text-align: center;
+}
+
+.section{
+    width: 58%;
+}
+
+
+.section h3{
+    background-color: rgb(0, 0, 79);
+    margin-top: 10px;
+    color: #fff;
+    border: 3px;
+    text-align: center;
+    padding: 30px;
+}
+
+.launch{
+    background-color: #bababa;
+    text-align: center;
+    padding: 50px;
+}
+
+.launch p{
+    padding: 30px;
+}
+
+.launch button{
+    background-color: blue;
+    padding: 12px 20px;
+    color: #fff;
+}

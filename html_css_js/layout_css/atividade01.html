@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 01 - Display e Visibility</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+
+    <h1>Teste 1: Display vs Visibility</h1>
+    
+    <h3 style="color: darkred;">1. Usando display: none;</h3>
+    <p>Abaixo deste texto, existe um parágrafo com <code>display: none</code>.</p>
+    
+    <div style="background-color: #ffcccb; padding: 10px; border: 1px solid red;">
+        Parágrafo Visível 1
+    </div>
+
+    <div style="display: none; background-color: rgb(0, 0, 0); color: white;">
+        VOCÊ NÃO VAI ME VER, E EU NÃO OCUPO ESPAÇO!
+    </div>
+
+    <div style="background-color: #ffcccb; padding: 10px; border: 1px solid red;">
+        Parágrafo Visível 2 (Perceba que estou colado no 1)
+    </div>
+
+    <hr style="margin: 30px 0;">
+
+    <h3 style="color: darkblue;">2. Usando visibility: hidden;</h3>
+    <p>Abaixo deste texto, existe um parágrafo com <code>visibility: hidden</code>.</p>
+
+    <div style="background-color: #cce5ff; padding: 10px; border: 1px solid blue;">
+        Parágrafo Visível A
+    </div>
+
+    <div style="visibility: hidden; background-color: rgb(0, 0, 0); color: white; padding: 10px; border: 1px solid black;">
+        Eu estou invisível, mas meu "fantasma" ocupa este espaço!
+    </div>
+
+    <div style="background-color: #cce5ff; padding: 10px; border: 1px solid blue;">
+        Parágrafo Visível B (Perceba o buraco vazio acima de mim)
+    </div>
+
+    <hr style="margin: 30px 0;">
+
+    <h3>3. Bônus: Block vs Inline</h3>
+    
+    <p style="display: block; background-color: yellow; border: 1px solid orange;">
+        Eu sou Block (ocupo a linha toda).
+    </p>
+    
+    <span style="display: inline; background-color: lightgreen; border: 1px solid green;">
+        Eu sou Inline 1.
+    </span>
+    <span style="display: inline; background-color: lightgreen; border: 1px solid green;">
+        Eu sou Inline 2 (fico ao lado).
+    </span>
+
+</body>
+</html>

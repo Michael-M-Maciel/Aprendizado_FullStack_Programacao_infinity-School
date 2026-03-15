@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex grid</title>
+    <style>
+        /* Container principal com layout em grid */
+        .grid_container{
+          display: grid;                    /* Define o elemento como container de grid */
+          grid-template-rows: auto 2fr auto; /* Define 3 linhas: auto (header), 2fr (main), auto (footer) */
+          height: 100vh;                    /* Define altura total da viewport (100% da altura da tela) */
+        }
+
+        /* Estilo do cabeçalho */
+        .header{
+            background-color: blue;         /* Define cor de fundo azul */
+            padding: 20px;                  /* Define espaço interno de 20px */
+            margin: 20px;                   /* Define espaço externo de 20px */
+            text-align: center;             /* Alinha o texto ao centro */
+        }
+
+        /* Estilo da área principal */
+        .main{
+            background-color: bisque;       /* Define cor de fundo bege claro */
+            padding: 20px;                  /* Define espaço interno de 20px */
+            margin: 20px;                   /* Define espaço externo de 20px */
+        }
+
+        /* Estilo do rodapé */
+        .footer{
+            grid-area: 'footer';            /* Define a área do grid para o footer */
+            background-color: brown;        /* Define cor de fundo marrom */
+            margin: 20px;                   /* Define espaço externo de 20px */
+            padding: 20px;                  /* Define espaço interno de 20px */
+        }
+    </style>
+
+    
+</head>
+
+<body>
+<div class="grid_container">
+    <div class="header">header</div>
+    <div class="main">main</div>
+    <div class="footer">footer</div>
+    
+</div>
+
+    
+</body>
+</html>
