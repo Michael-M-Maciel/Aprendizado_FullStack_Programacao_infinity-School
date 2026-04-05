@@ -7,53 +7,85 @@
 </head>
 <body>
     <script>
-    let tarefas = [];
+        let tarefas = [];
 
-// função anônima
+// função anônima (adicionar)
 let addTarefa = function(tarefa){
     tarefas.push(tarefa);
 }
 
-addTarefa('sair');
-addTarefa('comer');
-
-// arrow function (com índice)
+// arrow function (listar com índice)
 let listar = () => {
+    if (tarefas.length === 0) {
+        console.log("Nenhuma tarefa cadastrada.");
+        return;
+    }
+
     for(let i = 0; i < tarefas.length; i++){
         console.log(`Tarefa[${i+1}]: ${tarefas[i]}`);
     }
 }
-
-// chamada correta
-listar();
 
 // função com callback
 function gerenciarTarefas(callback){
     callback();
 }
 
-// funções de ação
-function removerTarefas(){
-    tarefas.pop();
+// remover
+function removerTarefa(){
+    let index = prompt("Digite o número da tarefa para remover:");
+    tarefas.splice(index - 1, 1);
 }
 
+// atualizar
 function atualizarTarefa(){
-    tarefas[0] = 'estudar';
+    let index = prompt("Digite o número da tarefa para atualizar:");
+    let nova = prompt("Digite a nova tarefa:");
+    tarefas[index - 1] = nova;
 }
 
+// concluir
 function concluirTarefa(){
-    tarefas[0] = tarefas[0] + ' ✔️';
+    let index = prompt("Digite o número da tarefa para concluir:");
+    tarefas[index - 1] = tarefas[index - 1] + " ✔️";
 }
 
-// usando callback 
-gerenciarTarefas(removerTarefas);
-listar();
+// MENU
+let opcao;
 
-gerenciarTarefas(atualizarTarefa);
-listar();
+do {
+    opcao = prompt(
+        "Escolha uma opção:\n" +
+        "1 - Adicionar tarefa\n" +
+        "2 - Listar tarefas\n" +
+        "3 - Remover tarefa\n" +
+        "4 - Atualizar tarefa\n" +
+        "5 - Concluir tarefa\n" +
+        "0 - Sair"
+    );
 
-gerenciarTarefas(concluirTarefa);
-listar();
+    if (opcao == 1) {
+        let tarefa = prompt("Digite a tarefa:");
+        addTarefa(tarefa);
+
+    } else if (opcao == 2) {
+        listar();
+
+    } else if (opcao == 3) {
+        gerenciarTarefas(removerTarefa);
+
+    } else if (opcao == 4) {
+        gerenciarTarefas(atualizarTarefa);
+
+    } else if (opcao == 5) {
+        gerenciarTarefas(concluirTarefa);
+    }
+
+} while (opcao != 0);
+
+console.log("Programa finalizado.");
+ 
+
     </script>
 
 </body>
