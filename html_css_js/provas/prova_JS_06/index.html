@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let tarefas = [];
+
+// função anônima
+let addTarefa = function(tarefa){
+    tarefas.push(tarefa);
+}
+
+addTarefa('sair');
+addTarefa('comer');
+
+// arrow function (com índice)
+let listar = () => {
+    for(let i = 0; i < tarefas.length; i++){
+        console.log(`Tarefa[${i+1}]: ${tarefas[i]}`);
+    }
+}
+
+// chamada correta
+listar();
+
+// função com callback
+function gerenciarTarefas(callback){
+    callback();
+}
+
+// funções de ação
+function removerTarefas(){
+    tarefas.pop();
+}
+
+function atualizarTarefa(){
+    tarefas[0] = 'estudar';
+}
+
+function concluirTarefa(){
+    tarefas[0] = tarefas[0] + ' ✔️';
+}
+
+// usando callback corretamente
+gerenciarTarefas(removerTarefas);
+listar();
+
+gerenciarTarefas(atualizarTarefa);
+listar();
+
+gerenciarTarefas(concluirTarefa);
+listar();
+    </script>
+
+</body>
+</html>
