@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova</title>
+</head>
+<body>
+    <script>    
+        // Crie um programa em JavaScript que gerencie uma lista de nomes utilizando diversos métodos auxiliares de arrays para realizar operações como adicionar,
+        //  filtrar, encontrar e transformar os dados.
+
+        // Requisitos do Projeto:
+        // * Adicionar Nomes:
+        // - Permita ao usuário adicionar nomes à lista utilizando o método push().
+        // - Exiba a lista atualizada no console.
+
+        // * Filtrar Nomes:
+        // - Use o método filter() para criar uma nova lista contendo apenas os nomes que começam com uma letra específica fornecida pelo usuário.
+        // - Exiba os nomes filtrados no console.
+
+        // * Buscar um Nome Específico:
+        // - Use o método find() para localizar o primeiro nome na lista que corresponde exatamente a um valor fornecido pelo usuário.
+        // - Exiba o resultado no console ou uma mensagem informando que o nome não foi encontrado.
+
+        // * Transformar Nomes:
+        // - Utilize o método map() para transformar todos os nomes da lista em letras maiúsculas.
+        // - Exiba a nova lista no console.
+
+        // * Verificar Condições:
+        // - Use o método every() para verificar se todos os nomes têm mais de três caracteres.
+        // - Exiba a resposta (true ou false) no console.
+
+        // * Interação Contínua: 
+        // - Implemente um loop while para permitir que o usuário escolha realizar várias operações consecutivas (adicionar, filtrar, buscar, transformar ou verificar).
+
+
+
+        //1
+        let nomes = ['joao', 'maria', 'ze', 'pedro'];
+
+        adicionarNome = function(){
+            let novo_nome = prompt('digite o novo nome: ');
+            nomes.push(novo_nome);
+        }
+
+        
+        //2
+        function filtrarNome(){
+            let inicial_nome = prompt('qual a inicial do nome que deseja: ').toLocaleLowerCase();
+
+            let filtrando = nomes.filter((name) => {
+            
+            return name.toLowerCase().startsWith(inicial_nome);
+        });
+        console.log(filtrando)
+
+        }
+        
+
+
+
+        //3
+
+        function buscandoNome(){
+            let achar_nome = prompt('qual nome deseja procurar: ').toLowerCase();
+        
+            let buscarNome = nomes.find((find_nome) => {
+                    return find_nome.toLowerCase() === achar_nome;          
+
+            });
+            
+            if(buscarNome !== undefined){
+                console.log(`nome encontrado ${buscarNome}`);
+            }
+            else{
+                console.log('nome não encontrado');
+            }
+
+        }
+        
+
+        //4
+        function transformarNomes(){
+            let letrasMaiusculas = nomes.map((names) => {
+            return names.toUpperCase();
+        });
+        console.log(letrasMaiusculas);
+
+        }
+        
+
+
+        //5
+        function verificarNomes(){
+            let todo_tresCaracteres = nomes.every(nome => nome.length > 3)
+
+        console.log(todo_tresCaracteres);
+
+        }
+
+        let opcao;
+        
+        while(opcao != '0'){
+            opcao =prompt(
+                '0-[sair]\n'+
+                '1-[add nome]\n'+
+                '2-[filtar nome]\n'+
+                '3-[buscar por nome]\n'+
+                '4-[nome maisculos]\n'+
+                '5-[todos nomes tem +3 letras]\n '
+            );
+
+            if(opcao =='0'){
+                console.log("fim do programa");
+                break;
+            }
+            else if(opcao =='1'){
+                adicionarNome();
+            }
+            else if(opcao =='2'){
+                filtrarNome();
+            }
+            else if(opcao =='3'){
+                buscandoNome();
+            }
+            else if(opcao =='4'){
+                transformarNomes();
+            }
+            else if(opcao =='5'){
+                verificarNomes();
+            }
+
+        }
+        
+            
+    
+
+
+
+    </script>
+    
+</body>
+</html>
