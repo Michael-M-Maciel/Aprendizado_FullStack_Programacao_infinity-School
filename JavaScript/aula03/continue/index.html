@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue</title>
+</head>
+<body>
+    <script>
+        /*
+         Exemplo didático usando `while` e `continue`:
+         - `numero` é a variável de controle que começa em 0.
+         - O laço `while` roda enquanto `numero <= 20`.
+         - Incrementamos `numero` no início da iteração para testar o próximo valor.
+         - A expressão `numero % 2 == 0` verifica se `numero` é par.
+         - Quando `continue` é executado, a iteração atual é interrompida e o laço
+           passa para a próxima iteração, pulando o `console.log` para números pares.
+         - Assim, apenas números ímpares são impressos.
+         - Boa prática: sempre use `===` para comparações estritas quando possível.
+        */
+
+        // variável de controle iniciando em 0
+        let numero = 0;
+
+        // enquanto numero for menor ou igual a 20
+        while (numero <= 20) {
+            // incrementa para testar o próximo número
+            numero++;
+
+            // se o número for par, pula a iteração atual
+            if (numero % 2 === 0) {
+                continue;
+            }
+
+            // só chega aqui para números ímpares
+            console.log(numero);
+        }
+
+    </script>
+    
+</body>
+</html>

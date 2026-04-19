@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tarefas = [];
+
+// função anônima (adicionar)
+let addTarefa = function(tarefa){
+    tarefas.push(tarefa);
+}
+
+// arrow function (listar com índice)
+let listar = () => {
+    if (tarefas.length === 0) {
+        console.log("Nenhuma tarefa cadastrada.");
+        return;
+    }
+
+    for(let i = 0; i < tarefas.length; i++){
+        console.log(`Tarefa[${i+1}]: ${tarefas[i]}`);
+    }
+}
+
+// função com callback
+function gerenciarTarefas(callback){
+    callback();
+}
+
+// remover
+function removerTarefa(){
+    let index = prompt("Digite o número da tarefa para remover:");
+    tarefas.splice(index - 1, 1);
+}
+
+// atualizar
+function atualizarTarefa(){
+    let index = prompt("Digite o número da tarefa para atualizar:");
+    let nova = prompt("Digite a nova tarefa:");
+    tarefas[index - 1] = nova;
+}
+
+// concluir
+function concluirTarefa(){
+    let index = prompt("Digite o número da tarefa para concluir:");
+    tarefas[index - 1] = tarefas[index - 1] + " ✔️";
+}
+
+// MENU
+let opcao;
+
+do {
+    opcao = prompt(
+        "Escolha uma opção:\n" +
+        "1 - Adicionar tarefa\n" +
+        "2 - Listar tarefas\n" +
+        "3 - Remover tarefa\n" +
+        "4 - Atualizar tarefa\n" +
+        "5 - Concluir tarefa\n" +
+        "0 - Sair"
+    );
+
+    if (opcao == 1) {
+        let tarefa = prompt("Digite a tarefa:");
+        addTarefa(tarefa);
+
+    } else if (opcao == 2) {
+        listar();
+
+    } else if (opcao == 3) {
+        gerenciarTarefas(removerTarefa);
+
+    } else if (opcao == 4) {
+        gerenciarTarefas(atualizarTarefa);
+
+    } else if (opcao == 5) {
+        gerenciarTarefas(concluirTarefa);
+    }
+
+} while (opcao != 0);
+
+console.log("Programa finalizado.");
+ 
+
+    </script>
+
+</body>
+</html>

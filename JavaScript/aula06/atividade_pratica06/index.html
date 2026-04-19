@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade pratica 06</title>
+</head>
+<body>
+    <script>
+        //criar função para dobrar
+        function dobrarValor(valor){
+            return valor * 2;
+        }
+
+         function raizQuadrada(valor){
+            return valor ** 0.5;
+        }
+
+
+        //função para usar o callback
+        function processarArray(array, callback){
+            let newArray = [];
+
+            for(let i of array){
+                newArray.push(callback(i))
+            }
+            return newArray;
+        }
+
+        //criando array
+        let array = [4, 16, 25, 81];
+        
+        //executando funçao com call back
+        resutado = processarArray(array, dobrarValor);
+        resutado2 = processarArray(array, raizQuadrada);
+
+        console.log(resutado);
+        console.log(resutado2);
+    </script>
+    
+</body>
+</html>

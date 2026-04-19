@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 Funções</title>
+</head>
+<body>
+    <script>
+        // //função simples
+        // function saudacao(){
+        //     console.log('Bom dia');
+        // }
+
+        // //saida: Bom dia
+        // saudacao();
+
+        
+        // //DECLARAÇÃO DE FUNÇÃO COM PARÂMETROS
+        //  function saudacao(nome){
+        //     console.log(`olá ${nome} !!!`);
+        //  }
+
+        // //saida: olá Michael !!!
+        //  saudacao('Michael');
+
+        // //Valores Padrão
+        // function saudacao(nome = 'Visitante'){
+        //     console.log(`olá ${nome}`);
+        // }
+
+        // //saida padrao: olá Visitante
+        // saudacao();
+
+
+        //REST operator
+        //O rest operator (...) permite que você agrupe vários argumentos em um único array.
+        //Isso é útil para funções que recebem um número variável de argumentos.
+
+        // function lista_filmes(filme_principal, ...outrosFilmes){
+        //     console.log(`Filme principla: ${filme_principal}`);
+        //     console.log(`Outros filmes: ${outrosFilmes.join(', ')}`);
+        // }
+        
+        // lista_filmes('Lord of the Rings', 'Vingadore', 'House of Dragon', 'Matrix');
+       
+
+
+        //Retirnando Valores da função
+        // function somar(a, b){
+        //     return a + b;
+        // }
+
+        // let valorSoma = somar(1, 10);
+        // console.log(`soma dos numero: ${valorSoma}`);
+
+
+        //FUNÇÕES NATIVAS COMUNS
+        // Math.random(): Retorna um número aleatório entre 0 (inclusivo) e 1 (exclusivo).
+
+        // parseInt(): Converte uma string em um número inteiro.
+
+        // Array.isArray(): Verifica se um valor é um array.
+
+        // setTimeout():Executa uma função após um determinado tempo em milissegundos.
+
+
+
+        //FUNÇÕES ANONIMAS : Em JavaScript, funções anônimas são funções sem
+        //nome, também chamadas de funções "lambda".
+
+        //Função Anônima Atribuída a uma Variável
+        // let saudacao = function saudacao(nome){
+        //     return `olá ${nome}`;
+        // }
+        // console.log(saudacao('Michael'));
+
+
+        //Função Anônima Passada como Callback para forEach
+        // let numeros = [1, 2, 3, 4, 5];
+       
+        // numeros.forEach(function(n){
+        //     console.log(n * 2); //dobre de cada numero da lista
+        // });
+
+
+        //Função Anônima como Callback em (setTimeout)
+        // setTimeout(function(){
+        //     console.log('mensagem depois de 2 segundo');
+        // },2000);
+
+
+        //Função Anônima Retornada por Outra Função
+        // function contaMultiplicador(multiplicador){
+        //     return function num(numero){
+        //         return numero * multiplicador;
+        //     }
+        // }
+
+        // let dobro = contaMultiplicador(2);
+        // console.log(dobro(5));
+       
+        //UTILIZANDO CALLBACK
+        // function minhaCallback(){
+        //     console.log('função callback sendo executada');
+        // }
+
+        // function executarCallback(callback){
+        //     console.log('iniciando a exxecução');
+        //     callback();
+        //     console.log('finalizandoe execução');
+        // }
+
+        // executarCallback(minhaCallback);
+
+
+
+        //ARROW FUNCTION
+
+        const soma = (a , b) => a + b;
+
+
+        console.log(soma(2, 5));
+
+
+        let saudacao = (nome) => {
+            return `olá ${nome}`;
+        }
+
+        console.log(saudacao('max'));
+
+   
+
+    </script>
+    
+</body>
+</html>

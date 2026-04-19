@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        let num1 = Number(prompt('digite um num1: '))
+        let num2 = Number(prompt('digite um num2: '))
+        let operacao = prompt('(+, -, /, *): ');
+        let calculo;
+
+        switch(operacao){
+            case '+':
+                calculo = num1 +=num2;
+                break
+            case '-':
+                calculo = num1 -=num2;
+                break
+            case '/':
+                calculo = num1 /=num2;
+                break
+            case '*':
+                calculo = num1 *=num2;
+                break
+            default:
+                calculo = 'calculo invalido';
+        }
+        console.log(calculo);
+
+
+
+        // let dia_semana = 7;
+        // let nome_dia;
+
+        // switch(dia_semana){
+        //     case 1:
+        //         nome_dia = 'domingo';
+        //         break;
+
+        //     case 2:
+        //         nome_dia = 'segunda';
+        //         break;
+
+        //     case 3:
+        //         nome_dia = 'terça';
+        //         break
+
+        //     case 4:
+        //         nome_dia = 'quarta';
+        //         break
+        //     case 5:
+        //         dia_semana = 'quinta';
+        //         break;
+
+        //     case 6:
+        //         nome_dia = 'sexta';
+        //         break
+
+        //     case 7:
+        //         nome_dia = 'sábado';
+        //         break
+
+        //     default:
+        //         nome_dia = 'dia inválido'
+       //}
+
+
+       
+
+        //console.log(nome_dia);
+     
+    </script>
+</body>
+</html>

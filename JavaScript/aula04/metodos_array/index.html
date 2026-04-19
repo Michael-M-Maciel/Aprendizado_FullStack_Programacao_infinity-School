@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos arrays</title>
+</head>
+<body>
+    <script>
+        // Push()Adiciona um ou mais elementos ao final do
+        // array e retorna o novo comprimento do array.
+
+        let frutasPush = ['Maçã', 'Banana'];
+        frutasPush.push('Laranja');
+
+        console.log(frutasPush);
+
+        // Pop() Remove o último elemento do array e o retorna.
+        let frutasPop = ['Maçã', 'Banana', 'Laranja'];
+        let ultima_fruta = frutasPop.pop();
+
+
+        // shift() Remove o primeiro elemento do array e o retorna.
+        let frutasShift = ['Maçã', 'Banana', 'Laranja'];
+        let primeira_fruta = frutasShift.shift();
+
+
+        // unshift() Adiciona um ou mais elementos ao início do
+        // array e retorna o novo comprimento do array.
+        let frutasUnshift = ['Maçã', 'Banana'];
+        frutasUnshift.unshift('Laranja');
+
+
+        // splice() Altera o conteúdo de um array,
+        // adicionando, removendo ou substituindo elementos.
+        // (indice, quantidade, elemento adiconar)
+
+        let frutasSplice = ['Maça', 'Banana', 'Laranja'];
+        frutasSplice.splice(1, 0, 'Morango', 'Uva');
+        //saida ['Maça', 'Morango', 'Uva', 'Banana', 'Laranja']
+
+
+        //slice() Retorna uma cópia superficial de uma parte de um array, selecionada
+        // desde o início até o fim (fim não incluído). O array original não é modificado.
+        let listaSlice = ["A", "B", "C", "D", "E"];
+        let nova = listaSlice.slice(1, 4);
+        //saida ["B", "C", "D"];
+
+
+        //concat() Usado para mesclar dois ou mais arrays. Este método não
+        //altera os arrays existentes, mas retorna um novo array.
+        let a = [1, 2];
+        let b = [3, 4];
+
+        let resultadoConcat = a.concat(b);
+        //saida [1, 2, 3, 4]
+
+        //reverse() Inverte a ordem dos elementos de um array no
+        // local. O primeiro elemento se torna o último, e o
+        // último elemento se torna o primeiro.
+        let listaReverse = [1, 2, 3, 4];
+        listaReverse.reverse();
+        //saida [4, 3, 2, 1]
+
+
+        //join() Une todos os elementos de um array em uma string e
+        //retorna esta string. É possível especificar um separador.
+        let listaJoin = ["A", "B", "C"];
+        let resultadoJoin = listaJoin.join();
+        //saida "A,B,C"
+
+
+        //sort() Ordena os elementos de um array no local e retorna o
+        // mesmo. A ordem padrão é crescente e alfabética.
+        // Para números, a ordenação converte os valores em
+        // strings, o que pode gerar resultados inesperados. Para
+        // números corretos, use uma função de comparação.
+        let frutasSort = ["Banana", "Maça", "Abacaxi"];
+        frutasSort.sort();
+        //saida ["Abacaxi", "Banana", "Maça"]
+
+
+        //includes() Verifica se um array contém um determinado valor de forma rápida e simples.
+        let numeros = [10, 20, 30];
+        numeros.includes(20);
+        //saida true
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade pratica 05</title>
+</head>
+<body>
+        <script>
+        //         Atividade 05
+        // Crie um script que utilize o método some() para verificar se um array
+        // contém algum número negativo. O script deve exibir no console uma
+        // mensagem indicando se há ou não números negativos no array.
+
+        // Objetivo:
+        // Praticar o uso do método some() para verificar se pelo menos um
+        // elemento em um array atende a uma condição específica.
+
+        let array = [-1 , -2, 0, 3];
+
+        let negativos = array.some((neg) => {
+            return `numeros negativos: ${neg < 0}` ;
+        });
+
+        console.log(negativos); // true
+
+          
+        </script>
+</body>
+</html>

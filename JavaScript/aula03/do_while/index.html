@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do while</title>
+</head>
+<body>
+    <script>
+                /*
+                 Exemplo didático de laço `do...while`:
+                 - A diferença principal para `while` é que o bloco `do` é executado
+                     pelo menos uma vez antes da condição ser verificada.
+                 - Declaramos `number` iniciando em 1 e, dentro do bloco `do`, imprimimos
+                     o valor e incrementamos a variável.
+                 - Após executar o bloco, a condição `while (number <= 10)` é avaliada;
+                     se for verdadeira, o laço se repete.
+                 - O `do...while` é útil quando desejamos garantir uma execução inicial
+                     mesmo que a condição inicial já seja falsa.
+                */
+
+                // variável de controle iniciando em 1
+                let number = 1;
+
+                // bloco executado ao menos uma vez
+                do {
+                        // imprime o valor atual de `number` no console
+                        console.log(number);
+
+                        // incrementa a variável para avançar nas iterações
+                        number++;
+                // após o `do`, verifica se deve repetir o laço
+                } while (number <= 10);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade pratica 07</title>
+</head>
+<body>
+    <script>
+        let filtrarPares = (array) => {
+            let newArray = [];
+
+            for(let i of array){
+                if(i % 2 == 0){
+                    newArray.push(i);
+                }                
+            }
+            return newArray;
+        }
+
+
+        let media = (arrayMedia) => {
+            let soma = 0;
+            for(let i of arrayMedia){
+               soma +=i ;
+            }
+            return soma / arrayMedia.length;            
+        }
+
+
+        let array =[1, 2, 3, 4];
+        console.log(filtrarPares(array));
+        console.log(media(filtrarPares(array)));
+    </script>
+</body>
+</html>

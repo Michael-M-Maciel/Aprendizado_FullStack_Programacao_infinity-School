@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while true</title>
+</head>
+<body>
+    <script>
+        /*
+         Exemplo didático com `while` e `break`:
+         - Aqui usamos uma variável `num` como contador.
+         - O laço `while` executa enquanto `num < 10` for verdadeiro.
+         - Dentro do laço imprimimos `num` e incrementamos com `num++`.
+         - Em seguida há uma verificação: se `num > 8`, usamos `break` para
+           sair imediatamente do laço, demonstrando como interromper um loop
+           antes da condição principal tornar-se falsa.
+         - Observação: é recomendado declarar variáveis com `let` ou `const`
+           para evitar variáveis globais acidentais.
+        */
+
+        // declarar a variável de controle usando `let` (boa prática)
+        let num = 1;
+
+        // enquanto num for menor que 10, execute o bloco
+        while (num < 10) {
+            // imprime o valor atual de num no console
+            console.log(num);
+
+            // incrementa num (equivalente a num = num + 1)
+            num++;
+
+            /*
+             se num ficar maior que 8 interrompemos o laço com `break`.
+             Isso mostra como forçar a saída do loop independentemente
+             da condição `while`.
+            */
+            if (num > 8) {
+                break;
+            }
+        }
+
+    </script>
+</body>
+</html>

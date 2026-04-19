@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade pratica 03</title>
+</head>
+<body>
+    <script>
+        //Atividade 03
+        // Crie um array chamado cores contendo as seguintes cores, Vermelho, Verde, Azul.
+
+        // Adicione as cores Amarelo e Roxo ao final do array.
+        // Em seguida, remova a última cor.
+        // Use o método splice para remover "Verde" e adicionar "Laranja" e "Marrom" em seu lugar.
+        // Crie um novo array chamado novasCores contendo as primeiras duas cores do array cores.
+        // Use o método join para criar uma string com todas as cores do array cores, separadas por uma vírgula.
+        // Inverta a ordem dos elementos no array cores.
+        // Exiba os arrays cores e novasCores, e a string resultante no console.
+
+        // Objetivo:
+        // Praticar operações básicas de criação, acesso e modificação de elementos em arrays.
+
+
+        let cores = ['Vermelho','Verde', 'Azul'];
+        cores.push('Amarelo','Roxo');
+        console.log(cores);
+        
+        cores.pop();
+        console.log(cores);
+
+        cores.splice(1, 1, 'Laranja', 'Marrom');
+        console.log(cores);
+
+        let novascores = cores.slice(0, 2);
+        console.log(novascores);
+
+        let resultado = cores.join(",");
+        console.log(resultado);
+
+        cores.reverse();
+        console.log(cores);
+        console.log(novascores);
+
+    </script>
+    
+</body>
+</html>

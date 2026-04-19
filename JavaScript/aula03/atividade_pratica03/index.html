@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade pratica 03</title>
+</head>
+<body>
+    <script>
+        //         Atividade 03
+        // Crie um código que peça ao usuário para adivinhar um número
+        // entre 1 e 10, repetindo o pedido até que o usuário acerte. Defina
+        // o número a ser adivinhado diretamente no código.
+
+        // Objetivo:
+        // Aprender a utilizar a estrutura de repetição while (true) para
+        // criar um jogo simples de adivinhação.
+
+
+        let numero_certo = 3;
+       
+        
+        while(true){
+            let usuario = Number(prompt('adivinhe o numero entre 0 e 10: '));
+            console.log(usuario);
+
+            if (usuario == numero_certo){
+                console.log('acertou, numero',numero_certo);
+                break
+            }
+
+    
+        }
+        console.log('fim');
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade pratica 03</title>
+</head>
+<body>
+    <script>
+        // Crie uma função chamada calcularSoma que utilize o rest operator para aceitar um número
+        // indefinido de parâmetros e calcular a soma de todos eles.
+        // Chame a função com diferentes quantidades de números e exiba o resultado no console.
+
+        // Objetivo:
+        // O console deve exibir a soma dos números passados para a função.
+        
+        function calcularSoma(...numeros){
+          let soma = 0;
+          //lembrado que rest operator cria um array.
+          for(let i of numeros){
+            soma += i;
+          }
+          console.log(`a soma dos numero: ${soma}`);  
+        }
+        
+        // total: 100
+        calcularSoma(1, 2, 3, 4, 10, 80);
+        calcularSoma(10, 10);
+
+
+    </script>
+    
+    
+</body>
+</html>
